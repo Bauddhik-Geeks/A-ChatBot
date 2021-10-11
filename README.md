@@ -36,16 +36,16 @@
 
 _Read the [issue.md](issue.md) file_
 
-<h1 align="center">Contributors</h1>
+<!-- <h1 align="center">Contributors</h1>
 
 <table>
   <tr>
     <td align="center"><a href="https://github.com/adityamangal1"><img    src="https://avatars.githubusercontent.com/adityamangal1" width="100px;" alt=""/><br /><sub><b>Aditya</b></sub></a></td>
-    <td align="center"><a href="https://github.com/EFFLUX110"><img src="https://avatars.githubusercontent.com/EFFLUX110" width="100px;" alt=""/><br /><sub><b>EFFLUX</b></sub></a></td>
+    <td align="center"><a href="https://github.com/EFFLUX110"><img src="https://avatars.githubusercontent.com/EFFLUX110" width="100px;" alt=""/><br /><sub><b>EFFLUX</b></sub></a></td> -->
   
   <!----PASTE_YOUR_CODE_ABOVE_THIS---- -->
-  </tr>
-</table>
+<!--   </tr> -->
+<!-- </table> -->
   
 
 ## Contributors ✨
