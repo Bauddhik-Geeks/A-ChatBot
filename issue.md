@@ -1,4 +1,4 @@
-# Some common errors _SOLVED_
+# _If you got this error_
 
 _You will probably get an error after some time, where it says_\
 `File "C:\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 264, in time_func = time.clock`
