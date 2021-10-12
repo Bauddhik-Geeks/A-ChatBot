@@ -3,15 +3,16 @@ Made by - Aditya mangal
 Purpose - Python mini project
 Date  - 18 october 2020
 '''
-from termcolor import cprint
+from termcolor import cprint,colored
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 import time
 
 chatbot = ChatBot('Bot')
 trainer = ChatterBotCorpusTrainer(chatbot)
-
-trainer.train('chatterbot.corpus.english')
+available=print(colored('Available languages >> \nbengali, chinese, english, french, german, hebrew, hindi, indonesian, italian,japanese, korean, marathi,\n oriya, persian, portuguese, russian, spanish, swedish, telugu, thai, traditionalchinese, turkish',"yellow"))
+language=input("\n\nIn which language do you want to start the conversation ? >> ").lower()
+trainer.train(f'chatterbot.corpus.{language}')
 
 
 if __name__ == "__main__":
@@ -20,9 +21,13 @@ if __name__ == "__main__":
     cprint("#" * 50, "magenta")
 
     print('You can exit by type exit\n')
+    name=input("Enter your name:")
+    cprint((f"Start Chatting").center(20), "yellow")
+    print()
     while True:
-        query = input(">> ")
-        if 'exit' in query:
+        query = input(colored(f"{name}>> ",'red'))
+        if 'exit' in query.lower() or 'bye' in query.lower():
+            print(colored("Bot>> Bye :) See you soon.....",'green'))
             exit()
         else:
-            print(chatbot.get_response(query))
+            print(colored(f"Bot>> {chatbot.get_response(query)}",'green'))
